@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import s from "./Input.module.css";
-import useDebounce from "../../utils/debounce";
+import useDebounce from "../../utils/useDebounce";
 
 export default function Input() {
   const [text, setText] = useState("");

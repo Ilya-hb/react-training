@@ -7,6 +7,8 @@ export default function useDebounce(value, delay = 250) {
     const timer = setTimeout(() => {
       setDebouncedVal(value);
     }, delay);
+
+    // 4. Функция очистки - КЛЮЧЕВАЯ ЧАСТЬ!
     return () => clearTimeout(timer);
   }, [value, delay]);
   return debouncedVal;
