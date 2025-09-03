@@ -1,5 +1,5 @@
 import Panel from "./Panel";
-import data from "./data";
+import data from "../../data.js";
 import styles from "./Accordion.module.css";
 
 export default function Accordion() {
