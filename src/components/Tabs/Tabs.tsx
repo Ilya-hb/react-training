@@ -1,17 +1,17 @@
 import s from "./Tab.module.css";
 import data from "../../data.js";
-import Tab from "./Tab.jsx";
+import Tab from "./Tab.js";
 import React from "react";
 import { useState } from "react";
 
 export default function Tabs() {
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState<number>(1);
 
-  const handleClick = (index) => {
+  const handleClick = (index: number) => {
     setActive(index);
   };
   const activeData = data[active];
-  console.log(activeData.text);
+
   return (
     <div>
       <div className={s.container}>
@@ -27,7 +27,7 @@ export default function Tabs() {
         ))}
       </div>
       <div className={`${s.paragraph}`}>
-        <p>{activeData.text}</p>
+        <p>{activeData?.text}</p>
       </div>
     </div>
   );

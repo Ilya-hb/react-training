@@ -1,4 +1,4 @@
-import useCounter from "../utils/useCounter";
+import useCounter from "../utils/useCounter.js";
 
 export default function Component() {
   const { count, increment, decrement, reset, setCount } = useCounter();

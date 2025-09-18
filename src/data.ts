@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
-const data = [
+import type { IData } from "./interfaces/index.js";
+const data: IData[] = [
   {
     id: uuidv4(),
     heading: "HTML",

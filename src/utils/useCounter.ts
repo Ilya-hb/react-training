@@ -14,7 +14,7 @@ export default function useCounter(initialValue = 0) {
     reset() {
       setCounter(initialValue);
     },
-    setCount(number) {
+    setCount(number: number) {
       setCounter(number);
     },
   };

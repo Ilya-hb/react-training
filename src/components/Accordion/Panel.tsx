@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa6";
 import styles from "./Accordion.module.css";
+import type { IData } from "../../interfaces/index.ts";
 
-export default function Panel({ heading, text }) {
+export default function Panel({
+  heading,
+  text,
+}: Pick<IData, "heading" | "text">) {
   const [isOpened, setIsOpened] = useState(false);
   return (
-    <div className="">
+    <div>
       <h2 onClick={() => setIsOpened(!isOpened)}>
         {heading}
         <FaChevronDown

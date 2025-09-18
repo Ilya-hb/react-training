@@ -1,7 +1,13 @@
-import React from "react";
 import s from "./Tab.module.css";
 
-export default function Tab({ index, active, heading, onClick }) {
+interface TabProps {
+  index: number;
+  active: boolean;
+  heading: string;
+  onClick: (index: number) => void;
+}
+
+export default function Tab({ index, active, heading, onClick }: TabProps) {
   return (
     <div
       className={`${s.tab_container} ${active && s.tab_container_active}`}
