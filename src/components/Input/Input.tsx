@@ -5,6 +5,7 @@ import useDebounce from "../../utils/useDebounce";
 export default function Input() {
   const [text, setText] = useState("");
   const debouncedText: string = useDebounce(text, 250);
+  console.log(text);
   return (
     <div className={s.container}>
       <input

@@ -1,7 +1,9 @@
 import Accordion from "./components/Accordion/Accordion";
 import Input from "./components/Input/Input";
 import Tabs from "./components/Tabs/Tabs";
-import Counter from "./components/Counter";
+import Counter from "./components/Counter/Counter";
+import { useRefExample } from "components/useRefExample/useRefExample";
+
 function App() {
   return (
     <div className="container">
@@ -9,6 +11,7 @@ function App() {
       <Input />
       <Tabs />
       <Counter />
+      {/* <useRefExample /> */}
     </div>
   );
 }
